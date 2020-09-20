@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
 
-export default class App extends Component  {
+export default class LoginForm extends Component{
     render(){
         return(
-            <div className="app">
+            <div className="login-form">
 
             </div>
         )
     }
 }
-
-           
