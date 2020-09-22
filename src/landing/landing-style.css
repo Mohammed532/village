@@ -1,0 +1,23 @@
+.landing{
+    background: rgb(164,164,164) !important;
+    background: linear-gradient(180deg, rgba(164,164,164,1) 0%, rgba(199,199,199,1) 28%, rgba(224,224,224,1) 100%) !important;
+}
+
+.login-form{
+    padding: 2%;
+}
+
+.login-username, .login-password{
+    padding-right: 2%;
+}
+
+.logo{
+    width: 40%;
+    height: 40%;
+    max-width: 60%;
+    max-height: 60%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5% 0;
+}
