@@ -10,12 +10,15 @@ export default function Landing(){
         <div className="landing">
             <LoginForm />
             <div className="logo">
-                <Image src={FullLogoTrans} fluid />
-                <h1 className="logo-subheading">Connect with your community</h1>
+                <Image src={FullLogoTrans} className='logo-img' fluid />
+                
             </div>
-            <Button basic className='' color='blue' size='huge' as='button'>
+            <h1 className="logo-subheading">Connect with your community</h1>
+            <div className='signup-button-container'>
+            <Button basic className='signup-button' color='blue' size='massive' as='button'>
                 <Link to="/signup">Sign Up!</Link>
             </Button>
+            </div>
         </div>
     )
 }

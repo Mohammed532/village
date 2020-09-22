@@ -1,5 +1,15 @@
 :root{
+    /* fonts */
   --f-heading: 3rem 'Poiret One', cursive;
+  --f-alerts: 2rem 'Bebas Neue', sans-serif;
+  --f-para: 12px 'Montserrat', sans-serif;
+
+    /* color scheme */
+    --cs-dark-blue: #14126D;
+    --cs-blue: #074CFC;
+    --cs-bright-blue: #0094FF;
+    --cs-grey: #E0E0E0;
+    --cs-black: #3C3C3C;
 }
 
 body {
@@ -15,8 +25,4 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-h1{
-  font: var(--f-heading) !important;
 }

@@ -1,6 +1,11 @@
 .landing{
+    height: 200vh; /* may cause problems later...*/
     background: rgb(164,164,164) !important;
     background: linear-gradient(180deg, rgba(164,164,164,1) 0%, rgba(199,199,199,1) 28%, rgba(224,224,224,1) 100%) !important;
+}
+
+.login-btn{
+    margin-right: 2% !important;
 }
 
 .login-form{
@@ -13,11 +18,31 @@
 
 .logo{
     width: 40%;
-    height: 40%;
     max-width: 60%;
-    max-height: 60%;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
     padding: 5% 0;
+}
+
+.logo-subheading{
+    font: var(--f-heading) !important;
+    text-align: center;
+}
+  
+
+.signup-button{
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+}
+
+/* Not working */
+/* .signup-button:hover{
+    background: blue !important;
+} */
+
+.signup-button-container{
+    text-align: center;
+    padding: 5%;
 }
