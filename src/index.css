@@ -1,8 +1,8 @@
 :root{
     /* fonts */
-  --f-heading: 3rem 'Poiret One', cursive;
-  --f-alerts: 2rem 'Bebas Neue', sans-serif;
-  --f-para: 12px 'Montserrat', sans-serif;
+    --f-heading: 3rem 'Poiret One', cursive;
+    --f-alerts: 2rem 'Bebas Neue', sans-serif;
+    --f-para: 1rem 'Montserrat', sans-serif;
 
     /* color scheme */
     --cs-dark-blue: #14126D;
@@ -13,16 +13,24 @@
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
  
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+}
+
+h1{
+    font: var(--f-heading) !important;
+}
+
+p{
+    font: var(--f-para) !important;
 }

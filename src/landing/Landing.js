@@ -13,10 +13,10 @@ export default function Landing(){
                 <Image src={FullLogoTrans} className='logo-img' fluid />
                 
             </div>
-            <h1 className="logo-subheading">Connect with your community</h1>
+            <h1 className="logo-subheading">It Takes One To Grow One</h1>
             <div className='signup-button-container'>
             <Button basic className='signup-button' color='blue' size='massive' as='button'>
-                <Link to="/signup">Sign Up!</Link>
+                <Link to="/signup" className='signup-link'>Sign Up!</Link>
             </Button>
             </div>
         </div>

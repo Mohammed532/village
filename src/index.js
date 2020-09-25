@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Firebase, { FirebaseContext } from './firebase/fbIndex'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 import './index.css'
@@ -7,9 +8,11 @@ import 'semantic-ui-css/semantic.min.css'
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <FirebaseContext.Provider value={new Firebase()}>
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+  </FirebaseContext.Provider>,
   document.getElementById('root')
 );
 

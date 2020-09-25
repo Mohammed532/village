@@ -31,11 +31,11 @@
 }
   
 
-.signup-button{
+/* .signup-link{
     margin-right: auto;
     margin-left: auto;
     width: 50%;
-}
+} */
 
 /* Not working */
 /* .signup-button:hover{
@@ -45,4 +45,30 @@
 .signup-button-container{
     text-align: center;
     padding: 5%;
+}
+
+/* SIGN UP PAGE */
+
+.signup{
+    background: rgba(5, 58, 192, 0.3);
+}
+
+.signup-form{
+    padding: 10%;
+    padding-top: 2%;
+}
+
+.signup-form-header{
+    font: var(--f-heading);
+    margin-top: 3%;
+    border-bottom: 1px solid var(--cs-black);
+    font-size: 2.2rem;
+}
+
+.address-btn{
+    padding-bottom: 3%;
+}
+
+.signup-btns{
+    width: 100%;
 }
