@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { Image, Button } from 'semantic-ui-react'
 import LoginForm from './LoginForm'
-import FullLogoTrans from './../res/fulllogo-trans.png'
+import FullLogoTrans from './../res/fulllogo(white)-trans.png'
 import './landing-style.css'
 
 export default function Landing(){
@@ -15,7 +15,7 @@ export default function Landing(){
             </div>
             <h1 className="logo-subheading">It Takes One To Grow One</h1>
             <div className='signup-button-container'>
-            <Button basic className='signup-button' color='blue' size='massive' as='button'>
+            <Button inverted className='signup-button' size='massive' as='button'>
                 <Link to="/signup" className='signup-link'>Sign Up!</Link>
             </Button>
             </div>

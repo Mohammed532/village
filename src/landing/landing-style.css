@@ -1,7 +1,7 @@
 .landing{
     height: 200vh; /* may cause problems later...*/
-    background: rgb(164,164,164) !important;
-    background: linear-gradient(180deg, rgba(164,164,164,1) 0%, rgba(199,199,199,1) 28%, rgba(224,224,224,1) 100%) !important;
+    background: rgb(56,89,38) !important;
+    background: linear-gradient(180deg, rgba(56,89,38,1) 0%, rgba(39,144,9,1) 30%, rgba(41,159,0,1) 100%) !important;
 }
 
 .login-btn{
@@ -26,21 +26,21 @@
 }
 
 .logo-subheading{
+    background-color: green;
+    border-radius: 10px;
+    margin: 0 10%;
     font: var(--f-heading) !important;
     text-align: center;
 }
   
 
-/* .signup-link{
-    margin-right: auto;
-    margin-left: auto;
-    width: 50%;
-} */
-
-/* Not working */
-/* .signup-button:hover{
-    background: blue !important;
-} */
+.signup-link{
+    color: white;
+    transition: color .1s ease;
+}
+.signup-button:hover > .signup-link{
+    color: black;
+}
 
 .signup-button-container{
     text-align: center;

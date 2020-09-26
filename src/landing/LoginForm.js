@@ -22,7 +22,7 @@ class LoginForm extends Component{
     render(){
         return(
             <form className="login-form">
-                <Button primary className='login-btn' size='large' >Login</Button>
+                <Button inverted color="grey" className='login-btn' size='large' >Login</Button>
                 <Input 
                   className="login-username"
                   id='loginUsername'
