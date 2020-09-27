@@ -1,0 +1,14 @@
+footer{
+    background-color: var(--cs-dark-green);
+    padding: 12px 5px;
+    
+}
+
+footer *{
+    color: white;
+}
+
+footer p{
+    display: inline-block;
+    float: right;
+}

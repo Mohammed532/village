@@ -5,9 +5,11 @@
     --f-para: 1rem 'Montserrat', sans-serif;
 
     /* color scheme */
-    --cs-dark-blue: #14126D;
-    --cs-blue: #074CFC;
-    --cs-bright-blue: #0094FF;
+    --cs-green: #17A407;
+    --cs-dark-green: #385926;
+    --cs-moss: #698945;
+    --cs-light-green: #A8C159;
+    --cs-olive: #9A9640;
     --cs-grey: #E0E0E0;
     --cs-black: #3C3C3C;
 }
@@ -19,7 +21,6 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
- 
 }
 
 code {

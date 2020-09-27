@@ -1,5 +1,5 @@
 .landing{
-    height: 200vh; /* may cause problems later...*/
+    height: 100%;
     background: rgb(56,89,38) !important;
     background: linear-gradient(180deg, rgba(56,89,38,1) 0%, rgba(39,144,9,1) 30%, rgba(41,159,0,1) 100%) !important;
 }
@@ -17,8 +17,8 @@
 }
 
 .logo{
-    width: 40%;
-    max-width: 60%;
+    width: 60%;
+    max-width: 80%;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -50,12 +50,18 @@
 /* SIGN UP PAGE */
 
 .signup{
-    background: rgba(5, 58, 192, 0.3);
+    background: var(--cs-light-green);
+    padding: 2%;
+    text-align: center;
 }
 
 .signup-form{
+    background-color: var(--cs-moss);
+    margin: 0 5%;
+    border-radius: 5px;
     padding: 10%;
     padding-top: 2%;
+    text-align: start;
 }
 
 .signup-form-header{

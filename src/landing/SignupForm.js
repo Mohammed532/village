@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Form, Button, Icon } from 'semantic-ui-react'
-import { withFirebase, NewUserHandler } from './../firebase/fbIndex';
+import { withFirebase, NewUserHandler } from './../firebase/fbIndex'
+import * as ROUTES from './../constants/routes'
 import './landing-style.css'
 
 class SignupForm extends Component{
@@ -69,16 +70,16 @@ class SignupForm extends Component{
 
         if(userInfo.password.localeCompare(userInfo.confirmPassword)){
             this.setState({invalidPassword: true});
-            console.log(userInfo.password, userInfo.confirmPassword);
         }else{
             this.setState({invalidPassword: false});
+            var fullUserInfo;
             
             if(disableAddress){
-                var fullUserInfo = {
+                fullUserInfo = {
                     ...userInfo
                 }
             }else{
-                var fullUserInfo = {
+                fullUserInfo = {
                     ...userInfo,
                     ...address
                 }
@@ -86,12 +87,14 @@ class SignupForm extends Component{
 
             // this.firebase.signUpWithEmail(fullUserInfo);
             NewUserHandler(this.firebase, fullUserInfo);
+            this.props.history.push(ROUTES.LIST);
         }
 
 
     }
 
     render(){
+        
         return(
             <div className="signup">
                 <h1>Lets get you set up with Village</h1>

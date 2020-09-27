@@ -1,0 +1,54 @@
+.community-list{
+    background-color: var(--cs-light-green);
+    padding: 2%;
+    height: 200vh;
+}
+
+.community-list p{
+    
+}
+
+.list-header{
+    border-bottom: 1px solid var(--cs-black);
+}
+
+.listed-community-container{
+    background-color: var(--cs-dark-green);
+    margin: 2% 0;
+    border-color: white;
+    transition: 0.2s ease;
+    
+}
+
+.listed-community-container:hover{
+    border: 5px solid white;
+    cursor: pointer;
+    /* margin: calc(2% - 3px) 0; */
+}
+
+.selected{
+    background-color: white;
+}
+
+.selected h2, .selected p{
+    color: black;
+}
+
+.listed-community-container h2{
+    font: var(--f-heading) !important;
+}
+
+.listed-community-header{
+    padding: 2%;
+    color: white;
+}
+
+.listed-community-body{
+    background-color: var(--cs-moss);
+    padding: 2%;
+}
+
+.listed-community-body p{
+    display: inline-block;
+    padding-left: 5px;
+}

@@ -19,6 +19,7 @@ class Firebase{
 
         this.auth = app.auth();
         this.db = app.firestore();
+        this._username = "";
     }
 
     //////// AUTH /////////
@@ -32,13 +33,26 @@ class Firebase{
         const {email, password} = userInfo;
         this.auth.createUserWithEmailAndPassword(email, password)
           .then(cred => {
-              console.log(cred.user.uid);
               this.updateUserDB(cred.user, userInfo)
+            //   this.username(userInfo.firstName + " " + userInfo.lastName)
           })
           .catch(err => {
-              console.log(err);
+            //   console.log(err);
               return err;
           })
+    }
+
+    getAllCommunities = () => {
+        var docs = [];
+        this.db.collection('communities').get()
+          .then(snapshot => {
+                console.log(snapshot);
+                snapshot.forEach(doc => {
+                    docs.push(doc);
+                })
+          })
+
+        return docs;
     }
 
     updateUserDB = (user, userInfo) =>{
@@ -46,6 +60,18 @@ class Firebase{
             name: userInfo.firstName + " " + userInfo.lastName,
             communities: [],
         })
+    }
+
+    signOut = () => {
+        this.auth.signOut();
+    }
+
+    get username(){
+        return this._username;
+    }
+
+    set username(username){
+        this._username = username;
     }
 }
 

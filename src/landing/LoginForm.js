@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 import { Input, Button } from "semantic-ui-react"
-import { withFirebase } from './../firebase/fbIndex';
+import { withFirebase } from './../firebase/fbIndex'
+import * as ROUTES from './../constants/routes'
+
 
 class LoginForm extends Component{
     constructor(props){
@@ -22,7 +25,7 @@ class LoginForm extends Component{
     render(){
         return(
             <form className="login-form">
-                <Button inverted color="grey" className='login-btn' size='large' >Login</Button>
+                <Link to={ROUTES.MAIN}><Button inverted color="grey" className='login-btn' size='large' >Login</Button></Link>
                 <Input 
                   className="login-username"
                   id='loginUsername'

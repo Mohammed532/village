@@ -11,13 +11,12 @@ export default function Landing(){
             <LoginForm />
             <div className="logo">
                 <Image src={FullLogoTrans} className='logo-img' fluid />
-                
             </div>
             <h1 className="logo-subheading">It Takes One To Grow One</h1>
             <div className='signup-button-container'>
-            <Button inverted className='signup-button' size='massive' as='button'>
-                <Link to="/signup" className='signup-link'>Sign Up!</Link>
-            </Button>
+            <Link to="/signup" className='signup-link'>
+                <Button inverted className='signup-button' size='massive' as='button' content="Sign Up!" />
+            </Link>
             </div>
         </div>
     )
